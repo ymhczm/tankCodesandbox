@@ -1,18 +1,16 @@
+
 <template>
-  <button @click="copy('测试copy')">复制到剪切板</button>
+  <h1>{{ msg }}</h1>
+
+  <div class="card">
+    <p>clickX:{{ clickX }}</p>
+    <p>clickY:{{ clickY }}</p>
+  </div>
 </template>
 <script setup lang="ts">
-import { useCopy } from "tankhooks";
-console.log(1)
-const copy = async(value:string)=>{
-  const result = await useCopy(value);
-  if(result==="SUCCESS") {
-      console.log("复制到剪切板成功")
-  } else if(result==="ERROR"){
-      console.log("复制到剪切板失败")
-  }
-}
+import { useMousePosition } from "tankhooks";
+
+const { clickY, clickX } = useMousePosition();
 </script>
 <style scoped>
-
 </style>
