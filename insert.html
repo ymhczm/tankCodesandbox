@@ -1,0 +1,30 @@
+<!--
+ * @Descripttion: 神之一手
+ * @version: 1.0.0
+ * @Author: null
+ * @Date: 2022-08-15 14:33:13
+ * @LastEditors: sueRimn
+ * @LastEditTime: 2022-08-15 14:50:18
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+  <script>
+    const number = 99999;
+    let app = document.getElementById("app");
+    for (var i = 0; i < number; i++) {
+      let div = document.createElement("div");
+      div.innerHTML = `insert你好，欢迎你，你是第${i + 1}个`;
+      // const content = element.innerHTML; = i;
+      app.appendChild(div);
+    }
+  </script>
+</html>

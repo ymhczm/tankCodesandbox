@@ -12,6 +12,9 @@ import UseMousePosition from "../components/UseMousePosition.vue";
 import UseScrollPosition from "../components/UseScrollPosition.vue";
 import UseDeepCopy from "../components/UseDeepCopy.vue";
 import UseSleep from "../components/UseSleep.vue";
+import InsertData from "../components/InsertData.vue";
+import SetTimeInsertData from "../components/SetTimeInsertData.vue";
+import VInsertData from "../components/VInsertData.vue";
 import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
@@ -21,6 +24,9 @@ const routes = [
   { path: "/useScrollPosition", component: UseScrollPosition },
   { path: "/useDeepCopy", component: UseDeepCopy },
   { path: "/useSleep", component: UseSleep },
+  { path: "/insertData", component: InsertData },
+  { path: "/setTimeInsertData", component: SetTimeInsertData },
+  { path: "/vInsertData", component: VInsertData },
 ];
 
 const router = createRouter({

@@ -11,6 +11,9 @@
     <router-link to="/useDeepCopy">useDeepCopy</router-link>
     <router-link to="/UseSleep">UseSleep</router-link>
     <router-link to="/useCopy">useCopy</router-link>
+    <router-link to="/insertData">insertData</router-link>
+    <router-link to="/setTimeInsertData">setTimeInsertData</router-link>
+    <router-link to="/vInsertData">vInsertData</router-link>
 
   </div>
   <router-view class="content"></router-view>
